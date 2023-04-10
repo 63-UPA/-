@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<title>24 February</title>
+</head>
+<body>
+
+  <div class="colvo_hid">Хід: <span id="colvo_hid">1</span></div>
+
+  <div class="modal-background" id="modal_progress">
+    <div class="modal-container">
+      <h2>Зачекайте...</h2>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="otchims"></div>
+
+  <div class="modal-background" id="win">
+    <div class="modal-container">
+      <h2>Батальон Шевцовых деоккупировал Донецк и загнал отчимов в подвал, при этом половина батальона героически погибла в подвале отчимов</h2>
+      <button class="hideM" onclick="hideModalWin()">Закрыть</button>
+    </div>
+  </div>
+
+  <div class="modal-background" id="defeat">
+    <div class="modal-container">
+      <img class="eblya" src="./videos/strata.gif" alt="Пример" loop autoplay>
+      <h2>Батальон Шевцовых был захвачен в плен и казнён в донецком подвале</h2>
+      <button class="hideM" onclick="hideModalDefeat()">Закрыть</button>
+    </div>
+  </div>
+
+  <div class="modal-background" id="no_sheva">
+    <div class="modal-container">
+      <h2>Количество Александров Шевцовых вычерпано</h2>
+      <button class="hideM" onclick="hideModalSheva()">Закрыть</button>
+    </div>
+  </div>
+
+  <div class="mobil_conteiner">
+    <div id="sheva"></div>
+    <h2 class="colvo">: 6000</h2>
+    <button id="mobil">Мобилізація</button>
+    <div id="text-container" style="display: none;">+1000</div>
+    <div id="text-container2" style="display: none;">+1000</div>
+    <div id="text-container3" style="display: none;">-6000</div>
+  </div>
+
+		<img class="map" src="./images/ua.png" alt="">
+	
+	<button class="btn" id="zp" onclick="showModalZP()">Запоріжжя</button>
+	<button class="btn" id="ln" onclick="showModalLN()">Луганськ</button>
+	<button class="btn" id="dn" onclick="showModalDN()">Донецьк</button>
+	<button class="btn" id="hk" onclick="showModalHK()">Харків</button>
+  <button class="btn" id="cr" onclick="showModalCrimea()">Крим</button>
+ 
+	 <div class="modal-background" id="zaporija">
+    <div class="modal-container">
+      <h2>В городе пока ничего не происходит</h2>
+      <button class="hideM" onclick="hideModalZP()">Закрыть</button>
+    </div>
+  </div>
+
+  <div class="modal-background" id="lugansk">
+    <div class="modal-container">
+      <h2>В городе происходит кисломолочный кисель</h2>
+      <button class="hideM" onclick="hideModalLN()">Закрыть</button>
+    </div>
+  </div>
+
+  <div class="modal-background" id="donetsk">
+    <div class="modal-container">
+      <h2>Город оккупировали члены ЧВК Подвал</h2>
+      <h2 id="h2_alert" style="color: rgb(255, 230, 0); display: none;">Шевцовых может нехватить</h2>
+      <button class="hideM" onclick="hideModalDN()">Закрыть</button>
+      <button class="counter">Контрнаступ</button>
+    </div>
+  </div>
+
+  <div class="modal-background" id="harkiv">
+    <div class="modal-container">
+      <h2>В городе ничего не происходит</h2>
+      <button class="hideM" onclick="hideModalHK()">Закрыть</button>
+    </div>
+  </div>
+
+  <div class="modal-background" id="crimea">
+    <div class="modal-container">
+      <h2>Полуостров временно зазвхачен отчимами</h2>
+      <button class="hideM" onclick="hideModalCrimea()">Закрыть</button>
+    </div>
+  </div>
+
+  <button class="hid">Зробити хід</button>
+
+	<script src="main.js"></script>
+	<script src="./cities_js/zaporija.js"></script>
+	<script src="./cities_js/lugansk.js"></script>
+  <script src="./cities_js/donetsk.js"></script>
+	<script src="./cities_js/harkiv.js"></script>
+  <script src="./cities_js/crimea.js"></script>
+	
+</body>
+</html>
